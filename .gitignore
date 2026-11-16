@@ -1,0 +1,65 @@
+# ==============================================================================
+# RecipeGenie .gitignore
+# ==============================================================================
+
+# Project Documentation, Presentation & Reports (as requested)
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+RecipeGenie_GenAI_Case_Study_Report.pdf
+RecipeGenie_Presentation.pptx
+RecipeGenie_Project_Demo_Script.pdf
+
+# Environment & Sensitive Credentials (NEVER commit secrets to GitHub)
+.env
+*.env
+backend/.env
+backend/.env.local
+backend/.env.production
+
+# Python Caches & Bytecode
+__pycache__/
+*/__pycache__/
+backend/app/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.eggs/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Node & Frontend Dependencies & Build Output
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+build/
+.output/
+
+# Logs & Temporary Scratch Scripts
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+generate_pdf_script.py
+
+# Editor, OS & IDE Artifacts
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db

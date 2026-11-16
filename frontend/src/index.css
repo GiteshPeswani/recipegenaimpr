@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F6F0E4;
+    color: #2B2118;
+    font-family: 'DM Sans', sans-serif;
+    /* Subtle paper grain texture */
+    background-image: radial-gradient(#E8DFC8 0.75px, transparent 0.75px), radial-gradient(#E8DFC8 0.75px, #F6F0E4 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .dark body {
+    background-color: #1E1915;
+    color: #EFE7DA;
+    background-image: radial-gradient(#2E2721 0.75px, transparent 0.75px), radial-gradient(#2E2721 0.75px, #1E1915 0.75px);
+  }
+
+  /* Accessible high-contrast focus rings */
+  :focus-visible {
+    outline: 2px solid #2B2118;
+    outline-offset: 2px;
+  }
+  .dark :focus-visible {
+    outline: 2px solid #EFE7DA;
+    outline-offset: 2px;
+  }
+}
+
+/* Notebook ruled line styling for ingredients */
+.notebook-ruled {
+  background-image: repeating-linear-gradient(transparent, transparent 31px, #E5DCB8 32px);
+  line-height: 32px;
+}
+
+.dark .notebook-ruled {
+  background-image: repeating-linear-gradient(transparent, transparent 31px, #362E28 32px);
+  line-height: 32px;
+}
+
+/* Custom double rule line */
+.double-rule {
+  border-top: 2px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  height: 4px;
+}
